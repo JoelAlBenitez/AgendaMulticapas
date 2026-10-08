@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-header {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container .container-header .title {
+    display: flex;
+    align-items: center;
+}
+
+.container .container-header .title #person {
+    font-size: 30px;
+    color: #101010a5;
+    margin-right: 10px;
+}
+
+.container .container-header .title h2 {
+    color: #101010a5;
+    font-size: 32px;
+}
+
+.container .container-header .title span {
+    color: #6c757d;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.container .container-header .form {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.container .container-header .form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-header .form label {
+    color: #101010a5;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.container .form input {
+    width: 160px;
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #dcdfe6;
+    border-radius: 6px;
+    outline: none;
+}
+
+.container .container-header .form .btn {
+    width: 45px;
+    height: 36px;
+    border: none;
+    background-color: #0d6efd;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.container .container-header .form .btn:hover {
+    background-color: #0b5ed7;
+}
+
+.container .Agent-Contact {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+    .container .Agent-Contact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .container .Agent-Contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 0 24px 24px 24px;
+    position: relative;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eef2f5;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-avatar-wrapper {
+    margin-top: -45px;
+    margin-bottom: 15px;
+}
+
+.avatar-placeholder {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #a8c0ff 0%, #3f2b96 100%);
+    border-radius: 24px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    box-shadow: 0 8px 16px rgba(63, 43, 150, 0.2);
+    border: 3px solid #ffffff;
+}
+
+.card-options {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #a0aec0;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.card-body {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-name {
+    color: #2d3748;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.contact-badge {
+    display: inline-block;
+    background-color: #0d6efd;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    border-top: 1px solid #edf2f7;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #718096;
+}
+
+.detail-label i {
+    margin-right: 6px;
+    color: #a0aec0;
+}
+
+.detail-value {
+    color: #4a5568;
+    font-weight: 600;
+}
